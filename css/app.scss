@@ -1,0 +1,175 @@
+@import "compass";
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 1.4;
+
+    background-color: #C1C1C1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 1000px !important;
+
+    background-color: #FFF;
+
+    .header {
+        display: block;
+        padding: 0px 70px 10px 40px;
+
+        height: 100px;
+        width: 100%;
+
+        color: #4B7B89;
+
+        .picture {
+            position: absolute;
+            top: 60px;
+
+            z-index: 2;
+        }
+
+        .name {
+
+            font-weight: bold;
+
+            span {
+                display: block;
+
+                color: #B0B4B9;
+                text-transform: uppercase;
+            }
+        }
+
+        h1, h3 {
+            display: inline-block;
+        }
+
+        .caption {
+
+            line-height: 100px;
+            font-style: italic;
+            font-size: 20px;
+        }
+    }
+
+    .content {
+
+        .main, .side {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .side {
+            padding: 140px 20px 10px;
+
+            background-color: #888;
+            color: #FFF;
+
+            ul.infos {
+                padding: 0;
+                margin: 0;
+
+                list-style: none;
+
+                li.divider {
+                    margin-bottom: 10px;
+                }
+
+                li.spacer {
+                    margin: 40px 0;
+                }
+            }
+        }
+
+        .main {
+            .page-header {
+                margin: 0;
+                padding: 0 30px;
+
+                height: 100px;
+
+                background-color: #4B7B89;
+                border: none;
+                color: #FFF;
+                font-weight: bold;
+
+                h2 {
+                    margin: 0;
+
+                    line-height: 100px;
+                }
+            }
+
+            section {
+                margin: 0 0 20px;
+
+                & > .label {
+                    display: block;
+                    padding: 0 10px;
+                    margin: 0 0 20px;
+
+                    height: 30px;
+                    width: 300px;
+
+                    background-color: #4B7B89;
+                    color: #FFF;
+                    font-weight: bold;
+                    line-height: 30px;
+                    text-indent: 20px;
+
+                    &.dark {
+                        background-color: #32515C;
+                    }
+
+                    &.light {
+                        background-color: #A6C4CE;
+                    }
+
+                    &.gray {
+                        background-color: #CACCD0;   
+                    }
+
+                    i {
+                        float: right;
+                        line-height: 30px;
+                    }
+                }
+
+                ul {
+                    padding: 0 50px;
+                    margin: 0;
+
+                    list-style: none;
+                    color: #7F7F7F;
+
+                    li.label {
+                        
+                        font-weight: bold;
+
+                        &.dark {
+                            color: #32515C;
+                        }
+
+                        &.light {
+                            color: #A6C4CE;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
